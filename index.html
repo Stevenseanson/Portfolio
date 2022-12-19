@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sean Stevenson // Web Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- main logo / nav -->
+  <header>
+    <h1>Sean Stevenson</h1>
+    <nav>
+      <a href="#AboutMeNav">About Me</a>
+      <a href="#work">Work</a>
+      <a href="#ContactNav">Contact</a>
+    </nav>
+  </header>
+
+  <!-- hero banner -->
+  <section class="hero-banner">
+    <div class="hero-container">
+      <img src="./images/02-hero-bg.jpg" alt="Black and white squares" style=width:100%; id="banner-img">
+      <div class="text-banner">Front End Web Developer</div>
+    </div>
+  </section>
+
+  <main class="page-wrapper">
+    <!-- about me -->
+    <section class="page-section" id="AboutMeNav">
+
+      <h2 class="h2-text">About Me</h2>
+
+      <p>Sean Stevenson is a Front End Web Developer from Toronto, Canada. He currently resides in London,
+        UK.
+        On his
+        free time he enjoys writing music and cycling.
+
+
+        here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
+        form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use
+        a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+        All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the
+        first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
+        of
+        model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is
+        therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+    </section>
+
+    <!-- portfolio container -->
+    <section class="page-section" id="work">
+
+      <h2 class="h2-text">Work</h2>
+
+      <div id="portfolioGrid">
+        <div id="refactorLink" class="portfolioGridArea"
+          onclick='location.href = "https://stevenseanson.github.io/Refactor-Challenge/";'>
+          <div class="heading">
+            <h3 class="workTitle">Refactor Challenge
+            </h3>
+            <div class="subTitle">CSS/HTML</div>
+          </div>
+
+
+        </div>
+        <div id="bioLink" class="portfolioGridArea"
+          onclick='location.href = "https://stevenseanson.github.io/biography/";'>
+          <div class="heading">
+            <h3 class="workTitle">Biography</h3>
+            <div class="subtitle">CSS/HTML</div>
+          </div>
+
+        </div>
+
+
+        <div id="placeholderLink" class="portfolioGridArea">
+          <div class="heading">
+            <h3 class="workTitle">Placeholder</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- contact -->
+    <footer class="page-section" id="ContactNav">
+      <h2 class="h2-text">Contact Me</h2>
+      <ul id="contact">
+        <li>+44 7776 085766</li>
+        <li>sean.flynn.stevenson@gmail.com</li>
+        <li><a href="https://github.com/Stevenseanson">Github</a></li>
+      </ul>
+    </footer>
+  </main>
+</body>
+
+</html>

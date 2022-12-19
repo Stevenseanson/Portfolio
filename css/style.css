@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+}
+
+/* CSS HEX */
+:root {
+  --star-command-blue: #2274a5ff;
+  --key-lime: #e7eb90ff;
+  --naples-yellow: #fadf63ff;
+  --goldenrod: #e6af2eff;
+  --wine: #632b30ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+p {
+  margin: 0;
+  float: right;
+  width: 70%;
+  border-left: 2px solid var(--wine);
+  padding-left: 30px;
+}
+
+.page-wrapper {
+  padding-top: 50px;
+  padding: 5px;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+
+/* This is the header */
+
+header {
+  height: 100px;
+  background-color: var(--naples-yellow);
+  position: relative;
+}
+
+header h1 {
+  display: inline-flex;
+  background-color: var(--key-lime);
+  padding-left: 50px;
+  position: absolute;
+  bottom: 0;
+  font-size: 50px;
+  padding-right: 5px;
+}
+
+nav {
+  position: absolute;
+  bottom: 20px;
+  right: 10%;
+}
+
+nav a {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+
+}
+
+/* Hero info below */
+
+.hero-container {
+  position: relative;
+  text-align: center;
+}
+
+.text-banner {
+  position: absolute;
+  right: 10%;
+  background-color: var(--key-lime);
+  bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+#banner-img {
+  max-height: 200px;
+  background-position: center;
+
+
+}
+
+/* All H2 CSS Below */
+
+
+.h2-text {
+
+  padding-right: 10px;
+  font-size: 50px;
+  text-align: right;
+  min-width: 30%;
+}
+
+.page-section {
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+/* Work section below */
+
+
+
+#portfolioGrid {
+  width: 70%;
+  margin-top: 5px;
+  display: grid;
+  grid-template-rows: 100px 100px 1fr 100px 100px;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "refactor refactor"
+    "refactor refactor"
+    "refactor refactor"
+    "refactor refactor"
+    "bio placeholder";
+  border-left: 2px solid var(--wine);
+}
+
+
+.portfolioGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  border: solid var(--wine) 5px;
+  position: relative;
+}
+
+#placeholderLink {
+  grid-area: placeholder;
+  background-image: url(../images/02-portfolio-3.jpg);
+}
+
+#placeholderLink:hover {
+  opacity: 80%;
+}
+
+.heading {
+  position: absolute;
+  bottom: 10%;
+  background-color: var(--wine);
+  color: white;
+  padding: 3px;
+  padding-right: 10px;
+}
+
+.workTitle {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.subTitle {
+  font-size: 16px;
+}
+
+#refactorLink {
+  grid-area: refactor;
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+#refactorLink:hover {
+  opacity: 80%;
+}
+
+#bioLink {
+  grid-area: bio;
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+
+#bioLink:hover {
+  opacity: 80%;
+}
+
+/* contact CSS below */
+
+li {
+  margin: 10px;
+}
+
+ul {
+  border-left: 2px solid var(--wine);
+}
+
+#contact {
+  display: inline-flex;
+  list-style-type: none;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1000px) {
+  header h1 {
+
+    padding-left: 50px;
+
+    padding-bottom: 15px;
+    font-size: 40px;
+
+  }
+
+  header {
+    background-color: var(--key-lime);
+  }
+
+  nav {
+    bottom: 0;
+    right: 90px;
+
+  }
+
+  nav a {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  #banner-img {
+    max-height: 100px;
+  }
+
+  .page-wrapper {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px
+  }
+
+  .page-section {
+    display: inline-block;
+  }
+
+  .h2-text {
+    text-align: center;
+    font-size: 30px;
+    background-color: var(--goldenrod);
+  }
+
+  p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: none;
+    width: 98%;
+    font-size: 14px;
+    border-left: 0px;
+    margin-left: 2px;
+    margin-right: 4px;
+  }
+
+  #work {
+    display: block;
+  }
+
+  #portfolioGrid {
+    width: 100%;
+    border-left: 0px;
+
+    padding-bottom: 10px;
+  }
+
+  #ContactNav {
+    display: block;
+  }
+
+  #contact {
+    display: block;
+  }
+
+  ul {
+    border-left: 0px;
+  }
+}
