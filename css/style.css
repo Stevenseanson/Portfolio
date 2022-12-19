@@ -46,6 +46,15 @@ p {
   margin-left: 80px;
 }
 
+#portrait {
+  position: absolute;
+  width: 8%;
+  max-width: 20%;
+  height: auto;
+  border-radius: 30%;
+  bottom: 10%;
+  left: 10%;
+}
 
 /* This is the header */
 
@@ -81,15 +90,16 @@ nav a {
 
 /* Hero info below */
 
+
+
 .hero-container {
   position: relative;
-  text-align: center;
 }
 
 .text-banner {
   position: absolute;
   right: 10%;
-  background-color: var(--key-lime);
+  background-color: var(--naples-yellow);
   bottom: 20px;
   font-weight: bold;
   font-size: 20px;
@@ -97,13 +107,15 @@ nav a {
 
 
 #banner-img {
+  background-position: bottom;
+  object-fit: cover;
+  width: 100%;
   max-height: 200px;
-  background-position: center;
-
+  overflow: hidden;
 
 }
 
-/* All H2 CSS Below */
+/* General CSS Below */
 
 
 .h2-text {
@@ -220,14 +232,14 @@ ul {
   header h1 {
 
     padding-left: 50px;
-
+    background-color: var(--naples-yellow);
     padding-bottom: 15px;
     font-size: 40px;
 
   }
 
   header {
-    background-color: var(--key-lime);
+    background-color: var(--naples-yellow)
   }
 
   nav {
@@ -245,6 +257,12 @@ ul {
     max-height: 100px;
   }
 
+  #portrait {
+
+    width: 10%;
+    left: 7%;
+  }
+
   .page-wrapper {
     margin-right: 0px;
     margin-left: 0px;
@@ -258,7 +276,7 @@ ul {
   .h2-text {
     text-align: center;
     font-size: 30px;
-    background-color: var(--goldenrod);
+    background-color: var(--key-lime)
   }
 
   p {
